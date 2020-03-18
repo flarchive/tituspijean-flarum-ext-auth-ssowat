@@ -1,0 +1,34 @@
+{
+	"name": "tituspijean/flarum-ext-auth-ssowat",
+	"description": "Allow users to log in through SSOwat.",
+	"type": "flarum-extension",
+	"keywords": ["authentication"],
+	"license": "MIT",
+	"authors": [{
+		"name": "TitusPiJean",
+		"email": "tituspijean@outlook.com"
+	}],
+	"support": {
+		"issues": "https://github.com/tituspijean/flarum-ext-auth-ssowat/issues",
+		"source": "https://github.com/tituspijean/flarum-ext-auth-ssowat"
+	},
+	"require": {
+		"flarum/core": ">=0.1.0-beta.12 <0.1.0-beta.13"
+	},
+	"autoload": {
+		"psr-4": {
+			"TitusPiJean\\Flarum\\Auth\\SSOwat\\": "src/"
+		}
+	},
+	"extra": {
+		"flarum-extension": {
+			"title": "SSOwat login",
+			"icon": {
+				"name": "far fa-id-badge",
+				"backgroundColor": "#b15959",
+				"color": "#fff"
+			}
+		}
+	},
+	"minimum-stability": "beta"
+}
